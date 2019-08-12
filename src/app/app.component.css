@@ -23,9 +23,6 @@
 pagination-controls /deep/ .ngx-pagination .pagination-previous a::before, 
 pagination-controls /deep/ .ngx-pagination .pagination-previous.disabled::before {
     font-family: 'icomoonLeft' !important;
-    speak: none;
-    font-variant: normal;
-    text-transform: none;
     line-height: 1;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -35,11 +32,6 @@ pagination-controls /deep/ .ngx-pagination .pagination-previous.disabled::before
 pagination-controls /deep/ .ngx-pagination .pagination-next a::after,
 pagination-controls /deep/ .ngx-pagination .pagination-next.disabled::after {
     font-family: 'icomoonRight' !important;
-    speak: none;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
     line-height: 1;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
