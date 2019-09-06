@@ -1,1 +1,50 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: 'icomoonLeft';
+    src:  url('assets/fonts/icomoonLeft.eot?m95f7a');
+    src:  url('assets/fonts/icomoonLeft.eot?m95f7a#iefix') format('embedded-opentype'),
+      url('assets/fonts/icomoonLeft.ttf?m95f7a') format('truetype'),
+      url('assets/fonts/icomoonLeft.woff?m95f7a') format('woff'),
+      url('assets/fonts/icomoonLeft.svg?m95f7a#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'icomoonRight';
+    src:  url('assets/fonts/icomoonRight.eot');
+    src:  url('assets/fonts/icomoonRight.eot?sekzcy#iefix') format('embedded-opentype'),
+        url('assets/fonts/icomoonRight.ttf?sekzcy') format('truetype'),
+        url('assets/fonts/icomoonRight.woff?sekzcy') format('woff'),
+        url('assets/fonts/icomoonRight.svg?sekzcy#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.paginator .ngx-pagination .pagination-previous a::before, 
+.paginator .ngx-pagination .pagination-previous.disabled::before {
+    font-family: 'icomoonLeft' !important;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "\ea44";    
+}
+
+.paginator .ngx-pagination .pagination-next a::after,
+.paginator .ngx-pagination .pagination-next.disabled::after {
+    font-family: 'icomoonRight' !important;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "\ea45";    
+}
+
+/* Style to page selected */
+.paginator .ngx-pagination .current {
+    background: red;
+    font-weight: bold;
+}
+
+/* Space between pages */
+.paginator .ngx-pagination li {
+    margin: 0px 3px;
+}
